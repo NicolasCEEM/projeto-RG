@@ -1,0 +1,14 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    color: blue;
+}
+
+input {
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid gray;
+}
