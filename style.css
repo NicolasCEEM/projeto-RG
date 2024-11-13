@@ -1,14 +1,43 @@
-body {
+/*body {
     text-align: center;
 }
 
 h1 {
     color: blue;
 }
-
+*/
+/*
 input {
     width: 200px;
     padding: 10px;
     margin: 10px;
     border: 1px solid gray;
+}
+*/
+
+input {
+    width: 200px;
+    padding: 8px;
+    margin-bottom: 8px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+select {
+    margin-bottom: 8px;
+    width: 200px;
+}
+
+button {
+    display: block;
+}
+
+.cpf-erro-mensagem {
+    display:none;
+    font-size:12px;
+    color: red
 }
