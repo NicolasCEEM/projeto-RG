@@ -14,7 +14,7 @@ Use o site [4Devs](https://www.4devs.com.br/gerador_de_pessoas) para gerar dados
 ## Melhorias/TODO
 - Aprimorar o sistema de geração de imagem aleatória.
 - Melhorar o design do site.
-- Opção para fazer download dos resultados gerados.
+- Opção para fazer download em imagem dos resultados gerados.
 
 # Agradecimentos
 - [Prof. Mestre Miderson](https://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K4331595E8)
