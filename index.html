@@ -4,16 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Minha Primeira Página Web</title>
+    <title>Gerador de Identidade</title>
 </head>
 <body>
-    <h1>Bem-vindo à Minha Página!</h1>
+    <h1>Bem-vindo ao gerador de identidades!</h1>
 
-    <label for="nome">Digite seu nome completo:</label>
-    <input type="text" id="nome" placeholder="Digite seu nome">
+    <label for="nome">Digite o seu nome completo:</label>
+    <input type="text" id="nome" placeholder="Digite o seu nome">
+
+    <label for="pai-nome">Digite o nome do seu pai:</label>
+    <input type="text" id="pai-nome" placeholder="Digite o nome de seu pai">
+
+    <label for="mae-nome">Digite o nome da sua mãe:</label>
+    <input type="text" id="mae-nome" placeholder="Digite o nome da sua mãe">
 
     <!-- <p>Qual seu estado de origem?</p> -->
     <!-- <input type="text" id="uf" placeholder="Digite o estado"> -->
+
+    <label for="data-nascimento">Selecione sua data de nascimento:</label>
+    <input type="date" id="data-nascimento">
 
     <label for="uf">Escolha o seu estado de origem:</label>
     <select name="estado" id="uf">
@@ -48,15 +57,28 @@
         <option value="TO">Tocantins</option>
     </select>
 
+    <label for="cidade">Digite a sua cidade de nascimento:</label>
+    <input type="text" id="cidade" disabled="true" placeholder="Digite sua cidade">
+    <!-- 
+    <select name="cidade" id="cidade" disabled="true">
+        <option value="" selected>- Selecione -</option>
+    </select>
+    -->
+
     <!-- <p>Qual seu CPF?</p> -->
     <label for="cpf">Digite seu CPF:</label>
     <input type="text" id="cpf" disabled="true" placeholder="Digite seu CPF">
 
-    <span id="nomeErro" class="cpf-erro-mensagem"><br>NOME ERRO.</br></span>
-    <span id="ufErro" class="cpf-erro-mensagem"><br>UF ERRO.</br></span>
-    <span id="cpfErro" class="cpf-erro-mensagem"><br>CPF ERRO.</br></span>
+    <span id="nomeErro" class="erro-mensagem"><br>NOME ERRO.</br></span>
+    <span id="ufErro" class="erro-mensagem"><br>UF ERRO.</br></span>
+    <span id="dataErro" class="erro-mensagem"><br>DATA ERRO.</br></span>
+    <span id="cpfErro" class="erro-mensagem"><br>CPF ERRO.</br></span>
 
-    <button class="button" id="botao" disabled="true">Verificar</button>
+    <br>
+    <button class="button" id="botao-frente" disabled="true">Gerar página da frente</button>
+    <button class="button" id="botao-tras" disabled="true">Gerar página de trás</button>
+    <br>
+    <canvas id="canvas" width="800" height="505"></canvas>
 
     <script src="main.js"></script>
 </body>
